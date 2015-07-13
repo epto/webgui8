@@ -1,0 +1,80 @@
+@event activity_main
+
+this.WGWin.setTitle("<%<usman_c>%>");
+if (!def(DATA.main)) return;
+if (!def(DATA.main.usr)) return;
+
+var cnt = WGWin.getByID('usercont');
+var h = WGWin.getScaleHeight();
+h = h-32;
+cnt.style.height=h+'px';
+
+var tbl = WGWin.getByID('userList');
+var j = tbl.rows.length;
+for (var i = 0; i<j ; i++) {
+	tbl.deleteRow(0);
+	} 
+
+var he = tbl.insertRow();
+he.setAttribute('class','apTblHead');
+var te = he.insertCell(0);
+te.innerHTML='<%<userc_ch>%>';
+te = he.insertCell(1);
+te.innerHTML='<%<groupc_ch>%>';
+te = he.insertCell(2);
+te.innerHTML='<%<optc_ch>%>';
+j=DATA.main.usr.length;
+
+for (var i = 0; i<j ; i++) {
+	var tr = tbl.insertRow();
+	var c = tr.insertCell(0);
+	c.innerHTML=toHTML(DATA.main.usr[i].name);
+	c = tr.insertCell(1);
+	c.innerHTML=toHTML(DATA.main.usr[i].group);
+	c = tr.insertCell(2);	
+	var d;
+	d = this.WGWin.newTag('img');
+	d.src='<%<APPPATH_CH>%>img/del.png';
+	d.setAttribute('data-wgusr',DATA.main.usr[i].id);
+	d.onclick=this.WGWin.WGEvent.delUser;
+	d.title='<%<rmusr_ch>%>';
+	c.appendChild(d);
+	d = this.WGWin.newTag('img');
+	d.src='<%<APPPATH_CH>%>img/pas.png';
+	d.setAttribute('data-wgusr',DATA.main.usr[i].id);
+	d.setAttribute('data-wguname',DATA.main.usr[i].name);
+	d.onclick=this.WGWin.WGEvent.passwd;
+	d.title='<%<chpa_ch>%>';
+	c.appendChild(d);
+	}
+		
+@end
+
+@function delUser (proc)
+	var uid = this.dataset.wgusr;
+	WIN.callAJAX('delusr',uid);
+@end
+
+@function passwd (proc)
+	var uid = this.dataset.wgusr;
+	var nmu = this.dataset.wguname;
+	DATA.main.curUid=uid;
+	DATA.passwd= {
+		"uid"	:	uid,
+		"name"	:	nmu,
+		"f1"	:	"",
+		"f2"	:	""}
+		;
+	this.WGWin.setActivity('passwd');
+	this.WGWin.update();
+	
+@end
+
+@menu
+	"<%<user_c>%>"	{
+		"<%<uslist_c>%>"	#main
+		"<%<newus_c>%>"		#newusr
+		"<%<quit_c>%>"			#_close()
+		}
+	
+@end

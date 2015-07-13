@@ -1,0 +1,10 @@
+{
+"chg"	:	"Cambia password",
+"chgd"	:	"Password cambiata",
+"retry"	:	"Ritenta",
+"error"	:	"Errore",
+"perr"	:	"Password non valida",
+"change":	"Cambia",
+"old"	:	"Vecchia password",
+"formt"	:	"Cambia la password di WebGui"
+}

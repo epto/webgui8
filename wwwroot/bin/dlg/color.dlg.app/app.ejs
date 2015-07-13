@@ -1,0 +1,149 @@
+
+@event okka
+	this.WGWin.dialogReturn(this.WGData.main.color);
+@end
+
+@event activity_main
+	try {
+		var vl = this.WGWin.getDialogValue();
+		if (vl) {
+		        vl=String(vl);
+		        vl=vl.replace(/\#/g,'');
+		        vl=vl+'000000';
+		        var r = parseInt(vl.substr(0,2),16);
+		        var g = parseInt(vl.substr(2,2),16);
+		        var b = parseInt(vl.substr(4,2),16);
+			var ele = this.WGWin.getByID('crv');
+			ele.value=r;
+			ele = this.WGWin.getByID('cgv');
+			ele.value=g;
+			ele = this.WGWin.getByID('cbv');
+			ele.value=b;
+			}
+	} catch(DevNull) {}
+			
+	this.rfsh();
+
+@end
+
+@event rfsh
+
+	var r = this.getval('crv','r');
+	var g = this.getval('cgv','g');
+	var b = this.getval('cbv','b');
+	
+	if (r<0) r=0;
+	if (r>255) r=255;
+	
+	if (g<0) g=0;
+	if (g>255) g=255;
+	
+	if (b<0) b=0;
+	if (b>255) b=255;
+	
+	var rs='#';
+	if (r<16) rs+='0';
+	rs+=r.toString(16);
+	
+	if (g<16) rs+='0';
+	rs+=g.toString(16);
+	
+	if (b<16) rs+='0';
+	rs+=b.toString(16);
+	
+	this.WGData.main.color=rs;
+	this.WGData.main.r=r;
+	this.WGData.main.g=g;
+	this.WGData.main.b=b;
+	
+	var e = this.WGWin.getByID('cr');
+	e.style.backgroundColor='rgb('+r+',0,0)';
+	e = this.WGWin.getByID('cg');
+	e.style.backgroundColor='rgb(0,'+g+',0)';
+	e = this.WGWin.getByID('cb');
+	e.style.backgroundColor='rgb(0,0,'+b+')';
+	e = this.WGWin.getByID('dlgCCprev');
+	e.style.backgroundColor=rs;
+	e = this.WGWin.getByID('code');
+	e.innerHTML=toHTML(rs);
+		
+	//e = this.WGWin.getByID('crv');
+	//e.value=r;
+	
+@end
+
+@event setcolor
+	var r = WGObj.dataset.coder;
+	var g = WGObj.dataset.codeg;
+	var b = WGObj.dataset.codeb;
+	var ele = this.WGWin.getByID('crv');
+	ele.value=r;
+	ele = this.WGWin.getByID('cgv');
+	ele.value=g;
+	ele = this.WGWin.getByID('cbv');
+	ele.value=b;
+	this.rfsh();
+	
+@end
+
+@event menoR
+	this.cambia('crv',-5);	
+@end
+
+@event piuR
+	this.cambia('crv',5);
+@end
+
+@event menoG
+	this.cambia('cgv',-5);	
+@end
+
+@event piuG
+	this.cambia('cgv',5);
+@end
+
+@event menoB
+	this.cambia('cbv',-5);	
+@end
+
+@event piuB
+	this.cambia('cbv',5);
+@end
+
+@function cambia (id,qt)
+	var r = this.WGWin.getByID(id);
+	var v = parseInt('0'+r.value);
+	v+=qt;
+	if (v>255) v=255;
+	if (v<0) v=0;
+	r.value=v;
+	this.WGWin.WGEvent.rfsh();
+@end
+
+@function getval (id,val)
+
+	var ele = this.WGWin.getByID(id);
+			
+	var x = parseInt('0'+ele.value);
+	
+	if (x<0) {
+		x=0;
+		ele.value=x;
+		this.WGWin.WGData.main[val]=x;
+		this.WGWin.update();
+		}
+		
+	if (x>255) {
+		x=255;
+		ele.value=x;
+		this.WGWin.WGData.main[val]=x;
+		this.WGWin.update();
+		}
+	
+	return x;
+
+@end 
+
+@rebound main_r_change => rfsh
+@rebound main_g_change => rfsh
+@rebound main_b_change => rfsh

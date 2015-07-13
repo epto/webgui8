@@ -1,0 +1,11 @@
+{
+"title"	:	"WebGui login",
+"retry"	:	"Retry",
+"deny"	:	"Access denied",
+"epass"	:	"Invalid login or password.",
+"close"	:	"Close",
+"loadi"	:	"Loading profile.",
+"logon"	:	"Login",
+"err1p"	:	"Invalid password",
+"err2p"	:	"Invalid login"
+}

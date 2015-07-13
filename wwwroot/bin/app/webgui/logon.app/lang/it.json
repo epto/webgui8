@@ -1,0 +1,12 @@
+{
+"_title":	"Accesso WebGui",
+"title":	"Accesso WebGui",
+"retry"	:	"Riprova",
+"deny"	:	"Accesso negato",
+"epass"	:	"Login o password errati.",
+"close"	:	"Chiudi",
+"loadi"	:	"Caricamento profilo.",
+"logon"	:	"Accedi",
+"err1p"	:	"Password non valida",
+"err2p"	:	"Login non valida"
+}

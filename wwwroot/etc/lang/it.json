@@ -1,0 +1,18 @@
+{
+"LANG"	:	"Italiano",
+"procSet"	:	{
+	"ewgSXMenu0"	:	"Massimizza\/Normalizza",
+	"ewgSXMenu1"	:	"Minimizza",
+	"ewgSXMenu2"	:	"Chiudi"
+	},
+
+"lockGui" :		"WebGui Bloccata",
+"lockGuiSession":	"WebGui Bloccata: Sessione scaduta",
+"lockGuiStolen":	"WebGui Bloccata: Sessione rubata",
+
+"ewgtrayManager"	:	"Utenti",
+"ewgtrayPasswd"		:	"Password",
+"ewgtrayLogout"		:	"Esci",
+"wgerror"		:	"Errore",
+"wgcancel"		:	"Annulla"
+}

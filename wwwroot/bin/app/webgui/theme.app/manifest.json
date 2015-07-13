@@ -1,0 +1,9 @@
+{
+	"title"	:	"Change Theme",
+	"ico"	:	"icon.png",
+	"pox"	:	"center",
+	"w"	:	400,
+	"h"	:	100,
+	"autoResize":	true,
+	"winType":	"popup"
+}

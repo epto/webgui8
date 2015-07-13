@@ -1,0 +1,8 @@
+{
+	"title"	:	"Welcome",
+	"ico"	:	"icon.png",
+	"pox"	:	"center",
+	"w"		:	400,
+	"h"		:	150,
+	"autoResize"	:	true
+}

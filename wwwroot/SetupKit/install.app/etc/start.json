@@ -1,0 +1,19 @@
+[
+
+	{
+	"t"	:	"Start",
+	"i"	:	"/img/application.png",
+	"l"	:	[
+	        	{
+			"i"	:	"/img/application.png",
+			"l"	:	".sys:lang.app",
+			"t"	:	"Language"
+			},
+				{
+			"i"	:	"/img/application.png",
+			"l"	:	".sys:theme.app",
+			"t"	:	"Theme"
+			}
+		]
+	}
+]

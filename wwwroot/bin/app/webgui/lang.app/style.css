@@ -1,0 +1,13 @@
+.WGWActivity {
+	font-family: verdana;
+	font-size: 9pt;
+	text-align: center;
+	}
+
+.SysAppLogonErr {
+	background-color: #f00 !important;
+	color: #000;
+	text-align: center;
+	font-family: verdana;
+	font-size: 9pt;
+	}

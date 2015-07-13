@@ -1,0 +1,28 @@
+body { 
+	font-family: Verdana; 
+	font-size: 9pt; 
+	}
+	
+.setupLoader {
+        display: table;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+.setupLoader div {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 auto;
+	text-align: center;
+	width: auto;
+	height: auto;
+	}
+	
+.setupError b { color: #f00; }
+.consiglio {
+	font-size: 8pt;
+	font-weight: bold;
+	font-family: Verdana;
+	}

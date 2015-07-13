@@ -1,0 +1,22 @@
+[
+	
+   	{
+	"b"	:	"/img/folder.png",
+	"i"	:	"/img/icon_apps.gif",
+	"l"	:	"/usr/bin/demo.app",
+	"t"	:	"Demo 1"
+	},
+
+	{
+	"b"	:	"/img/folder.png",
+	"i"	:	"/img/application.png",
+	"l"	:	"/usr/test.dir",
+	"t"	:	"Test Dir"
+	},
+	{
+	"b"	:	"/img/folder.png",
+	"i"	:	"/img/mime/txt.gif",
+	"l"	:	"/usr/test.dir/leggimi.txt",
+	"t"	:	"leggimi.txt"
+	}
+]

@@ -1,0 +1,92 @@
+{
+	"themeInfo" : {
+		"name"	:	"default",
+		"title"	:	"Default WebGui8"
+		},
+		
+	"msgBox": {
+		"charWidth" 	: 	6,
+		"extraWidth"	:	50,
+		"extraHeight"	:	88,
+		"minCharWidth"	:	60,
+		"minWidth"		:	300,
+		"minHeight"		:	60
+		},
+	"toast"		:	{
+		"width"	:	400,
+		"height":	20,
+		"time"	:	5
+		},
+	"win"	:	{
+	        "barHeight"		:	20,
+	        "icoSize"		:	20,
+	        "bottomHeight"	:	8,
+	        "borderSize"	:	2,
+	        "menuHeight"	:	20,
+	        "bottomIco"		:	8,
+	        "minWidth"		:	100,
+	        "minHeight"		:	48,
+	        "statusHeight"	:	20,
+	        "titleBorder"	:	0,
+	        
+	        "default"	:	{
+				"title"	:	" "	,
+				"x"		:	0	,
+				"y"		:	0	,
+				"w"		:	320	,
+				"h"		:	240	,
+				"html"	:	" " ,
+				"i"		:	"/img/win_form.gif"
+				},
+	        
+	        "icon"	:	{
+				"i"	:	"/img/win_form.gif"
+				}
+	        }	,
+	"menu"	:	{
+			"itemWidth"		:	150,
+			"itemHeight"	:	20,
+			"icoSize"		:	20,
+			"icoDx"			:	"/img/menu_sub.gif",
+			"icoChk"		:	[
+								"/img/CHK0.gif",
+								"/img/CHK1.gif",
+								"/img/CHK2.gif",
+								"/img/CHK3.gif"
+								]
+		},
+
+	"icon"	:	{
+		"rx"		:	27,
+		"ry"		:	26,
+		"cx"		:	27,
+		"cy"		:	27,
+		"width"		:	70,
+		"height"	:	70,
+		"textHeight":	20,
+		"oMargin"	:	1,
+		"vMargin"	:	1,
+		"minTipLen"	:	16
+		},
+
+	"boxIcon"	:	{
+		"ask"	:	"/img/msgbox_ask.gif",
+		"info"	:	"/img/msgbox_info.gif",
+		"stop"	:	"/img/msgbox_stop.gif",
+		"warn"	:	"/img/msgbox_warn.gif"
+		},
+
+	"menuClass"	:	{
+		"start" : {
+			"itemWidth"		:	150,
+			"itemHeight"	:	24,
+			"icoSize"		:	24,
+			"icoDx"			:	"/img/menu_sub.gif",
+			"icoChk"		:	[
+				"/img/CHK0.gif",
+				"/img/CHK1.gif",
+				"/img/CHK2.gif",
+				"/img/CHK3.gif"] 
+				}
+			}
+} 

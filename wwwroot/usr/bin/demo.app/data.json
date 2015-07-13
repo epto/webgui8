@@ -1,0 +1,10 @@
+{
+	"main"	:	{
+		"font"	:	{
+			"fontFamily" : "Verdana"
+			},
+		"color"	:	"#000",
+		"vol"	:	"",
+		"name"	:	"N/A"
+		}
+}

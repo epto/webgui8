@@ -1,0 +1,50 @@
+
+<Files ~ ".*$">
+    Order deny,allow
+    Deny from all
+</Files>
+
+<Files ~ ".*.js$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files ~ ".*.mp3$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files ~ ".*.ogg$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files ~ ".*.css$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files ~ ".*.gif$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files ~ ".*.swf$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files ~ ".*.png$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files ~ ".*.svg$">
+    Order allow,deny
+    Allow from all
+</Files>
+
+<Files ~ ".*.jpg$">
+    Order allow,deny
+    Allow from all
+</Files>

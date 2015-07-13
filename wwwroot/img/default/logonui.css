@@ -1,0 +1,13 @@
+.EWGLogonUIWin { border-radius: 4px; }
+.EWGLogonUIWin * { font-family: Verdana; font-size: 9pt; border-radius: 4px; }
+.EWGLogonUIWin .WGWinTitleBar { border: none; }
+.EWGLogonUIWin .WGWinContent { border-top: #000 1px solid; }
+.EWGLogonUIWin input { border: #048 1px solid; height: 20px; line-height: 20px; font-size: 8pt; line-height: 20px; }
+.EWGLogonUIWin input[type=submit] { height: 24px; background-color: #048; color: #fff; border-color: #000; }
+.EWGLogonUIWin .WGBottomIco { background-color: #ccc; }
+.EWGLogonForm { width: 100%; height: 99%; }
+.EWGLogonForm td { vertical-align: middle; }
+.EWGLogonForm tr td:nth-child(1) { text-align: right; width: 33%; }
+.EWGLogonForm tr td:nth-child(2) input { width: 98%; margin: auto; }
+.EWGLogonUIWin .WGWinTitleBar { color: #fff; text-align: center; }
+.EWGLogonUI { background: #8cf; }

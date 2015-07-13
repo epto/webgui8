@@ -1,0 +1,8 @@
+{
+	"title"	:	"Logon",
+	"ico"	:	"icon.png",
+	"pox"	:	"center",
+	"w"	:	400,
+	"h"	:	140,
+	"winType":	"popup"
+}

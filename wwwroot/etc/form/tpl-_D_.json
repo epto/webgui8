@@ -1,0 +1,8 @@
+{
+  "CAPTCHA" : {
+        "imgtext" : "Click here to reload the code.",
+	"placeholder" : "Copy the captcha code from left image.",
+	"err" : "Invalid captcha code.",                                           
+	"onused" : "This captca code is arleady used.\nRedo from start."
+  	}	  
+}

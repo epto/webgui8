@@ -1,0 +1,19 @@
+{
+"uslist"	:	"Users list",
+"error"		:	"Error",
+"cancel"	:	"Cancel",
+"usman"		:	"User Manager",
+"rmusr"		:	"Remove user",
+"chpa"		:	"Change password",
+"newus"		:	"New user",
+"user"		:	"User",
+"userc"		:	"User",
+"groupc"	:	"Group",
+"optc"		:	"Options",
+"fcp"		:	"Change password",
+"fivu"		:	"Invalid user name",
+"change"	:	"Change",
+"create"	:	"Create",
+"utip"		:	"User type",
+"quit"		:	"Quit"
+}

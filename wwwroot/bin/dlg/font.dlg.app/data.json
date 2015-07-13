@@ -1,0 +1,8 @@
+{
+"main"	:	{
+	"TYPE"	:	"EWG.FONT",
+	"fontFamily"	:	"Verdana",
+	"fontSize"	:	"10pt",
+	"fontWeight"	:	"normal"
+	}
+}

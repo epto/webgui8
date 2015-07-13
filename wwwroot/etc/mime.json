@@ -1,0 +1,160 @@
+{
+
+	"jpg"	: {
+		"fil" : "jpg.php",
+		"x" : {
+			"n"	: "Image",
+			"i"	: "jpg.gif"
+			},
+		"m": [
+			  "FFD8FFE0",
+			  "FFD8FFE1"
+			 ] 
+		}
+	,
+	"gif"	: { "r" : "jpg",
+		"m": ["47494638"] },
+		
+	"svg"	: { "r" : "jpg" },
+	"png"	: { "r" : "jpg",
+		"m": ["89504E47"] },
+		
+	"jpeg"	: { "r"	: "jpg",
+		 	"m": [
+			  "FFD8FFE0",
+			  "FFD8FFE1"
+			 ] },
+			 
+	"bmp"	: { "r" : "jpg",
+			"m": [ "424D"] },
+	
+	"txt"	: {
+		"fil" : "txt.php",
+		"x" : {
+			"n" : "Text",
+			"i" : "txt.gif"
+			}
+	},
+	
+	"down"	:	{
+	        "fil"	:	"down.php",
+	        "x"	:	{
+	        	"n"	:	"Download",
+	        	"i"	:	"down.png",
+	        	"download"	:	true
+			}
+		},
+	
+	"rar"	: {
+		"r"	: "down",
+		"m"	: ["526172211A07"]
+		},
+	
+	"java"	: {
+	        "r"	: "down",
+	        "m"	: ["CAFEBABE"]
+		},
+		
+	"tar"	: {
+	        "r"	: "down",
+	        "m"	: ["1F9D"]
+		},
+	
+	"z"	: {
+	        "r"	: "down",
+	        "m"	: ["1F9D"]
+		},
+	
+	"lzh"	: {
+	        "r"	: "down",
+	        "m"	: ["1FA0"]
+		},
+		
+	"zip"	: {
+	        "r"	: "down",
+	        "m"	: ["504B"]
+		},
+	
+	 "exe"	: {
+	        "r"	: "down",
+	        "m"	: ["4D5A","5A4D"]
+	 	},
+	 	
+	 "com"	: {
+	        "r"	: "down",
+	        "m"	: ["4D5A","5A4D"]
+	 	},
+	
+	"elf" : {
+	        "r"	: "down",
+	        "m"	: ["7F454C46"]
+		},
+	
+	"ps" : {
+	        "r"	: "down",
+	        "m"	: ["25215053"]
+		},
+		
+	"pdf" : {
+	        "r"	: "down",
+	        "m"	: ["25504446"]
+		},		
+	"log"	: { "r" : "txt" },
+	"ini"	: { "r" : "txt" },
+	"conf"	: { "r" : "txt" },
+	
+	"php"	: {
+		"fil" : "php.php",
+		"x" : {
+			"n" : "Application",
+			"i" : "php.gif"
+		}
+	},
+	
+	"audio"	: {
+		"fil"	:	"audio.php",
+		"x"	: {
+			"n"	:	"Audio",
+			"i" :	"audio.gif"
+			}
+		},
+	
+	"mp3"	: { "r" : "audio" },
+	"ogg"	: { "r" : "audio" },
+	
+	"radio"	: { "r" : "audio",
+		"x"	: {
+			"n" : "Web Radio",
+			"i" : "audio.gif"
+			}
+		},
+	
+	"php3"	: { "r" : "php" },
+	"php4"	: { "r" : "php" },
+	"php5"	: { "r" : "php" },
+	
+	"youtube" : {
+	        "fil" : "youtube.php",
+	        "x" : {
+		        "n"	: "Video",
+		        "i"	: "youtube.png"
+			}
+		},
+	
+	"link"	: {
+		"fil" : "link.php",
+	        "x" : {
+		        "n"	: "Link",
+		        "i"	: "link.png"
+			}	
+		},
+	
+	"dir"	: {
+		"dir" : "dir.php",
+		"x" : {
+			"n" : "<DIR>",
+			"i" : "dir.gif"
+		}
+	}
+	
+}

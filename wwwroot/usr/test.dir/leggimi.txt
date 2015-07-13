@@ -1,0 +1,133 @@
+﻿
+█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+█               EPTO WebGui8 Ver. 0.0.1B              █
+█                  © 2015 by EPTO (A)                 █
+█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+
+Questo è un framework per applicazioni con desktop remoto su web.
+
+É consigliato l'uso tramite autenticazione HTTP con HTTPS.
+
+Per sviluppare applicazioni si può usare php usando tutte le API disponibili. 
+Tuttavia è meglio usare il formato .app proprio della WebGui8 per aver a 
+disposizione tutte le funzionalità in modo facile.
+
+Nell'installazione di base ci sono alcune applicazioni di esempio:
+
+/usr/bin/demo.app
+	Si tratta di un'applicazione con tre activity che permette la
+	selezione di un font, un colore, un numero ed una stringa.
+	Questi dati sono utilizzati per modificare una div.
+	
+/usr/bin/welcome.app
+	Classica appllicazione Hello World usata anche come presentazione
+	iniziale.
+	
+/usr/test.dir/form.app
+	Applicazione di esempio completamente gestita tramite una form
+	con struttura dati convertita e visualizzata tramite print_r.
+
+───────────────────────────────────────────────────────────────────────────────
+
+Directory di WebGui8:
+/bin
+	Contiene i programmi ed i file essenziali della WebGui.
+	
+/bin/app
+	Contiene le applicazioni pubbliche della WebGui.
+
+/bin/mime
+	Contiene gli esegutori per i tipi di file riconosciuti.
+	
+/bin/dlg
+	Contiene le finestre di dialogo usate dalle applicazioni.
+	
+/bin/dll
+	Contiene i moduli aggiuntivi della WebGui.
+
+/bin/lib
+	Contiene i file da includere (se scrivi un file php in /usr oppure
+	/home oppure il tuo file php sarà incluso con tutte le librerie).
+	
+/bin/php
+	Posizione in cui mettere i file php che possono essere chiamati 
+	direttamente.
+	
+/bin/wgx
+	Contiene le custom control per la WebGui.
+	
+/bin/mod
+	Contiene i moduli aggiuntivi della WebGui.
+
+/bin/system
+	Contiene le chiamate di sistema.
+
+/home
+	Questa directory contiene le cartelle degli utenti.
+
+/home/_grp
+	Questa directory contiene le cartelle dei gruppi.
+	
+/img
+	Questa cartella contiene i temi grafici.
+	Le immagini sono riferite sempre su /img senza citare il tema.
+	Questa è una directory speciale che provvede da sola al 
+	trasferimento delle immagini al tema corrente con polititca di
+	priorità gestento anche la cache del browser.
+	
+/etc
+	Contiene i file di configurazione della WebGui.
+
+/etc/.skel
+	Contiene i file che sono automaticamente copiati nelle home 
+	all'atto di creazione degli utenti.
+	I file sono divisi per gruppi in grp e per tutti in all.
+	
+/etc/_grp
+	Contiene le configurazioni degli utenti divise per gruppi o per
+	tutti gli utenti (_all).
+
+/etc/conf.d
+	Contiene le configurazioni per i moduli aggiuntivi.
+	
+/etc/form
+	Contiene i template divisi per lingua da usare nelle form.
+
+/SetupKit
+	Contiene il programma di installazione.
+	Questa directory deve essere rimossa dopo l'installazione della
+	WebGui.
+	
+/sys
+	Contiene JavaScript, CSS della WebGui (il core dalla parte del 
+	client).
+	
+/sys/font
+	Contiene i fonts usati dalla WebGui (per installare nuovi font 
+	basta copiarli nella directory la WebGui aggiornerà /var/cache ).
+	
+/sys/font/captcha
+	Font usati dal captcha e dalla WebGui.
+	
+/sys/font/_captcha
+	Font usati solo dal captcha e non dalla WebGui.
+	
+/usr
+	Directory accessibile al pubblico.
+
+/usr/bin
+	Programmi accessibili a tutti.
+
+/var
+	Contiene le informazioni variabili, la cache ed altre informazioni.
+
+───────────────────────────────────────────────────────────────────────────────
+
+Questa versione della WebGui8 è una beta. La documentazione è ancora in corso
+di sviluppo.
+
+───────────────────────────────────────────────────────────────────────────────
+
+
+
+

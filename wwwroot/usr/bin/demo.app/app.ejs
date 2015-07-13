@@ -1,0 +1,19 @@
+
+@event activity_test
+	if (!def(DATA.main)) return;
+	
+	WIN.setStyleByData('prova','main.font');
+	var e = WIN.getByID('prova');
+	e.innerHTML=toHTML(DATA.main.name+' '+DATA.main.vol);
+	e.style.color=DATA.main.color;
+		
+@end
+
+@menu
+	"Menu"	{
+		"Activity Main"             #main
+		"Activity Fuffa"            #fuffa
+		"Activity Test"				#test
+		"Chiudi"                    #_close()
+		}
+@end

@@ -1,0 +1,30 @@
+
+@event update
+        var el = this.WGWin.getByID("prev");
+    	el.style.fontFamily=this.WGData.main.fontFamily;
+    	el.style.fontSize=this.WGData.main.fontSize;
+    	el.style.fontWeight=this.WGData.main.fontWeight;
+@end
+
+@event font
+	this.WGWin.dialogReturn(this.WGData.main);
+@end
+
+@rebound main_fontFamily_change => update
+@rebound main_fontSize_change => update
+@rebound main_fontWeight_change => update 
+
+@event activity_main
+		try {
+		var vl = this.WGWin.getDialogValue();
+			if (vl) {
+			if (vl.fontFamily) this.WGData.main.fontFamily=vl.fontFamily;
+			if (vl.fontSize) this.WGData.main.fontSize=vl.fontSize;
+			if (vl.fontWeight) this.WGData.main.fontWeight=vl.fontWeight;
+			this.WGWin.update();
+			}
+		} catch(DevNull) {}
+		
+	this.WGWin.WGEvent.update();
+
+@end

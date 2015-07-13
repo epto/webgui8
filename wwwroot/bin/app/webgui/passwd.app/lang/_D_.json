@@ -1,0 +1,9 @@
+{
+"chgd"	:	"Password changed",
+"retry"	:	"Retry",
+"error"	:	"Error",
+"perr"	:	"Invalid password",
+"change":	"Change",
+"old"	:	"Old password",
+"formt"	:	"Change WebGui password"
+}

@@ -1,0 +1,20 @@
+body {
+	font-family: verdana;
+	font-size: 9pt;
+	background-color: #fff;
+	color: #000;
+	}
+	
+.DemoProva {
+	right: 8px;
+	bottom: 8px;
+	width: 250px;
+	overflow: hidden;
+	position: absolute;
+	border: #000 1px solid;
+	height: 72px;
+	line-height: 72px;
+	text-align: center;
+	background-color: #fff;
+	}
+

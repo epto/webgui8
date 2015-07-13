@@ -1,0 +1,38 @@
+{
+	"main"	:	{
+	"usr"	:	[
+	        {
+		"id"	:	8000,
+		"name"	:	"a001",
+		"group"	:	"fuffa"
+		}
+		,
+		{
+		"id"	:	8001,
+		"name"	:	"a002",
+		"group"	:	"fuffa"
+		},
+		{
+		"id"	:	8003,
+		"name"	:	"a003",
+		"group"	:	"fuffa"
+		}
+		]
+	},
+ "error" : {
+        "msg"	:	"N/A"
+ 	},
+
+ "passwd" :{
+		"uid"	:	0,
+		"name"	:	"",
+		"f1"	:	"",
+		"f2"	:	""
+		},
+ "newusr" : {
+        "login"	:	"",
+        "f1"	:	"",
+        "f2"	:	"",
+        "group"	:	"user"
+ 	}
+}

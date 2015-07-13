@@ -1,0 +1,8 @@
+{
+	"title"	:	"Change password",
+	"ico"	:	"icon.png",
+	"pox"	:	"center",
+	"w"	:	400,
+	"h"	:	170,
+	"winType":	"popup"
+}

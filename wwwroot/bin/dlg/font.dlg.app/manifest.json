@@ -1,0 +1,8 @@
+{
+	"appType":	"DIALOG",
+	"title"	:	"Select Font",
+	"ico"	:	"icon.png",
+	"pox"	:	"center",
+	"w"	:	400,
+	"h"	:	158
+}
